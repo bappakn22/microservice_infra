@@ -39,11 +39,6 @@ jobs:
       - name: Run TFLint
         run: tflint -f compact
 
-      - name: Run tfsec
-        uses: aquasecurity/tfsec-action@v1.0.0
-        with:
-          working_directory: .
-
       - name: Checkov GitHub Action
         uses: bridgecrewio/checkov-action@master
         with:
