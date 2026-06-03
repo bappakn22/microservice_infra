@@ -11,6 +11,7 @@ crash.*.log
 
 # Exclude sensitive vars
 *.tfvars
+!terraform.tfvars
 *.tfvars.json
 override.tf
 override.tf.json
