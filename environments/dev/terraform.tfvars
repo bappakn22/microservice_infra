@@ -27,13 +27,13 @@ clusters = {
     default_node_pool = {
       name                = "systempool"
       node_count          = 1
-      vm_size             = "Standard_DS2_v2"
+      vm_size             = "Standard_D2s_v3"
       enable_auto_scaling = false
     }
 
     extra_node_pools = {
       "userpool" = {
-        vm_size             = "Standard_DS2_v2"
+        vm_size             = "Standard_D2s_v3"
         node_count          = 1
         enable_auto_scaling = true
         min_count           = 1
